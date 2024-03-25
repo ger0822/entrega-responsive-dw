@@ -3,9 +3,10 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .header-index{
@@ -155,7 +156,7 @@ header{
 
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     header{
         justify-content: space-around;
     }
@@ -167,7 +168,20 @@ header{
     .navBar li a{
         font-size: 30px;
     }
+
+    .team-cards{
+        display:flex;
+        flex-direction:column;
+    }
+    .team-card{
+        width:85%; 
+        margin: 25px auto;
+    }
+    .contenido-texto-familias{
+        text-align: left;
+    }
 }
+
 
 @media (max-width: 425px){
     .navBar{
@@ -416,5 +430,81 @@ header{
 }
 .card{
     margin-top:40px;
+
+}
+
+
+.president-image{
+    width: 20.75rem;
+    height: 18.25rem;
+    margin-left: 0px;
+
+}
+
+.vice-image{
+    width: 21.75rem;
+    height: 18.25rem;
+}
+
+.oficer-image{
+    width: 13.75rem;
+    height: 18.25rem;
+}
+
+.team-section{
+    margin-top:75px;
+}
+
+.team-title{
+    font-size: 50px;
+    color:black;
+    text-align: center;
+    position:relative;
+}
+
+.team-cards{
+    width:85%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.team-title{
+    margin-top:220px;
+}
+.team-card{
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    margin: 0px 20px;
+    padding:20px;
+    text-align: center;
+    transition: transform 0.6s ease;
+    width:calc(33.33% - 20px);
+    overflow: hidden;
+}
+
+.team-card:hover{
+    transform: translateY(-12px);
+}
+
+.team-image img{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    margin-bottom:10px;
+}
+
+.team-detail h3{
+    color: black;
+    font-size: 30px;
+    margin: 15px 0px;
+}
+
+.team-detail p{
+    color:#426385;
+    font-size:18px;
 
 }
